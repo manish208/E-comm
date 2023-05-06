@@ -1,0 +1,26 @@
+.productList{
+    text-align: center;
+    color: blue;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+table{
+    text-align: left;
+    color: black;
+    border-collapse: collapse;
+    margin: auto;
+    
+}
+table td, table th{
+    border: 1px solid blue;
+    padding: 10px;
+    min-height: 120px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+.adjust{
+    margin-left: 10px;
+}

@@ -1,0 +1,48 @@
+<nav class="navbar">
+        <img routerLink="/" src="assets/images/logo.png" alt="logo">
+        <div *ngIf="menuType!=='seller'" class="navbar-search">
+            <input #searchInput type="text" (keyup)="searchProduct($event)" (blur)="hideSearch()" placeholder="Search for products">
+            <button (click)="submitSearch(searchInput.value)">Search</button>
+            <ul class="suggested-result" *ngIf="searchProd">
+                <li *ngFor="let search of searchProd">
+                    <a (mousedown)="redirectDetails(search.id)">{{search.name}}</a>
+                </li>
+            </ul>
+        </div>
+        <div [ngSwitch]="menuType">
+            <ul *ngSwitchCase="'default'">
+                <li><a routerLink=""><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-check-fill" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                    <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.707l.547.547 1.17-1.951a.5.5 0 1 1 .858.514Z"/>
+                  </svg>Home</a></li>
+                <li><a routerLink="seller-auth">Seller</a></li>
+                <li><a routerLink="/user-auth">User Login</a></li>
+                <li><a [routerLink]="cartItems>0?'/user-auth':null"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                  </svg>({{cartItems}})</a></li>
+            </ul>
+
+            <ul *ngSwitchCase="'user'">
+                <li><a routerLink="/"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-house-check-fill" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z"/>
+                    <path d="m8 3.293 4.712 4.712A4.5 4.5 0 0 0 8.758 15H3.5A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z"/>
+                    <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.707l.547.547 1.17-1.951a.5.5 0 1 1 .858.514Z"/>
+                  </svg>Home</a></li>
+                <!-- <li><a routerLink="seller-auth">Seller</a></li> -->
+                <li><a routerLink="/">{{userName | titlecase}}</a></li>
+                <li><a routerLink="my-orders">My Orders</a></li>
+                <li><a (click)="userLogout()">Logout</a></li>
+                <li><a [routerLink]="cartItems>0?'cart-page':null"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-cart-plus-fill" viewBox="0 0 16 16">
+                    <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zM9 5.5V7h1.5a.5.5 0 0 1 0 1H9v1.5a.5.5 0 0 1-1 0V8H6.5a.5.5 0 0 1 0-1H8V5.5a.5.5 0 0 1 1 0z"/>
+                  </svg>({{cartItems}})</a></li>
+            </ul>
+
+            <ul *ngSwitchCase="'seller'">
+                <li><a routerLink="seller-add-product">Add Product</a></li>
+                <li><a routerLink="seller-home">List</a></li>
+                <li><a (click)="sellerLogout()">Logout</a></li>
+                <li><a >{{sellerName | titlecase}}</a></li>
+            </ul>
+        </div>
+</nav>

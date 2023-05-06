@@ -1,0 +1,29 @@
+<div class="seller-auth">
+    <div *ngIf="!showLogin" class="signup">
+        <h2>Seller's Sign-Up</h2>
+        <form #sellerSignUp="ngForm" (ngSubmit)="signUp(sellerSignUp.value)" class="common-form">
+            <input class="form-input" ngModel type="text" name="name" placeholder="Enter name" #name="ngModel" required>
+            <p class="invalid-input"><span *ngIf="name.invalid && name.touched">Please enter name</span></p>
+            <input class="form-input" ngModel type="text" name="email" placeholder="Enter email" #email="ngModel" required email>
+            <p class="invalid-input"><span *ngIf="email.invalid && email.touched">Enter valid email</span></p>
+            <input class="form-input" ngModel type="password" name="password" placeholder="Enter password" #password="ngModel" required minlength="4" maxlength="20">
+            <p><span *ngIf="password.invalid && password.touched">Enter valid password</span></p>
+            <button [disabled]="sellerSignUp" class="form-button" >Sign-Up</button>
+            <a class="auth-toggle-link" (click)="openLogin()">Already have account? Click here</a>
+        </form>
+    </div>
+    <!-- Login Area -->
+
+    <div *ngIf="showLogin" class="login">
+        <h2>Seller's Login</h2>
+        <h5 class="error-p">{{authError}}</h5>
+        <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)" class="common-form">
+            <input class="form-input" type="text" name="email" placeholder="Enter email" ngModel #email="ngModel" required email>
+            <p class="invalid-input"><span *ngIf="email.invalid && email.touched">Please enter valid password</span></p>
+            <input class="form-input" type="password" name="password" placeholder="Enter password" ngModel #password="ngModel" minlength="4" maxlength="20" required>
+            <p class="invalid-input"><span *ngIf="password.invalid && password.touched">Enter valid password</span></p>
+            <button class="form-button" [disabled]="sellerLogin.invalid">Login</button>
+            <a class="auth-toggle-link" (click)="openSignUp()">Don't have account? Click here</a>
+        </form>
+    </div> 
+</div>

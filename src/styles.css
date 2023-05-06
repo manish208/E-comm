@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 50px;
+}
+
+/* Global Form CSS */
+
+.common-form{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+.form-input {
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    color: blue;
+}
+
+.form-button {
+    height: 35px;
+    border: 1px solid blue;
+    background-color: rgba(167, 163, 163, 0.7);
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+    color: blue;
+    padding: 5px;
+}
+.auth-toggle-link{
+    margin-top: 20px;
+    color: blue;
+    font-size: 14px;
+    text-align: center;
+    cursor: pointer;
+}
+.error-p{
+    color: red;
+    text-align: center;
+}
+
+.add-product h2{
+    color: blue;
+    text-align: center;
+}
+
+
+.message-p{
+    color: green;
+    text-align: center;
+}
+
+.carousel-caption{
+    background-color: rgba(167, 163, 163, 0.7);
+}
+.carousel-control-next-icon, .carousel-control-prev-icon{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+/* Footer CSS */
+.footer{
+    background-color: #c9c2c2;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.foot-icon svg{
+    text-align: center;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.contact{
+    font-size: medium;
+    font-weight: 600;
+    color: blue;
+}
+
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+}
+button:disabled{
+    cursor: not-allowed;
+}

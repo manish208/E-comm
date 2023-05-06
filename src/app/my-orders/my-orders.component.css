@@ -1,0 +1,28 @@
+.my-orders{
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+.my-orders div{
+    text-align: center;
+}
+
+.my-orders .row-data{
+    margin-bottom: 20px;
+    font-size: large;
+    font-weight: 600
+}
+.my-orders h2{
+    text-align: center;
+    color: blue;
+}
+
+.my-orders img{
+    width: 100px;
+}
+
+.order-data{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}

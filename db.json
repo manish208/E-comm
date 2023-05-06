@@ -1,0 +1,375 @@
+{
+  "sellers": [
+    {
+      "name": "Manish Choudhary",
+      "email": "manish@seller.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "Adam Milne",
+      "email": "adam@seller.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "Bill",
+      "email": "bill@seller.com",
+      "password": "abc@123",
+      "id": 3
+    },
+    {
+      "name": "Ballat",
+      "email": "ballat@test.com",
+      "password": "abc@123",
+      "id": 4
+    },
+    {
+      "name": "Chriss",
+      "email": "chriss@test.com",
+      "password": "abc@123",
+      "id": 5
+    }
+  ],
+  "users": [
+    {
+      "name": "anil",
+      "email": "anil@test.com",
+      "password": "abc@123",
+      "id": 1
+    },
+    {
+      "name": "sam",
+      "email": "sam@test.com",
+      "password": "abc@123",
+      "id": 2
+    },
+    {
+      "name": "tony",
+      "email": "tony@test.com",
+      "password": "abc@123",
+      "id": 3
+    },
+    {
+      "name": "Sarry",
+      "email": "sarry@test.com",
+      "password": "abc@123",
+      "id": 4
+    },
+    {
+      "name": "erik",
+      "email": "erik@user.com",
+      "password": "abc@123",
+      "id": 5
+    },
+    {
+      "name": "abc",
+      "email": "abc@user.com",
+      "password": "abc@123",
+      "id": 6
+    },
+    {
+      "name": "dad",
+      "email": "dad@test.com",
+      "password": "abc@123",
+      "id": 7
+    },
+    {
+      "name": "toy",
+      "email": "toy@test.com",
+      "password": "abc@123",
+      "id": 8
+    },
+    {
+      "name": "user",
+      "email": "user@test.com",
+      "password": "abc@123",
+      "id": 9
+    },
+    {
+      "name": "bruce",
+      "email": "bruce@test.com",
+      "password": "abc@123",
+      "id": 10
+    },
+    {
+      "name": "kanav",
+      "email": "kanav@user.com",
+      "password": "kanav",
+      "id": 11
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 12
+    }
+  ],
+  "cart": [
+    {
+      "name": "Asiccs Shoes",
+      "price": "4500",
+      "color": "Black",
+      "category": "Shoes",
+      "description": "Stylish & Comfort",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/y/y/a/-original-imagg6rfhxwx2te4.jpeg?q=70",
+      "quantity": 1,
+      "productId": 4,
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "5000",
+      "color": "Black",
+      "category": "Shoes",
+      "description": "Comfy & Jumpy Shoes",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/3/3/w/-original-imaggcb3yyfn2hpz.jpeg?q=70",
+      "quantity": 3,
+      "userId": 1,
+      "productId": 3,
+      "id": 2
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "5000",
+      "color": "Black",
+      "category": "Shoes",
+      "description": "Comfy & Jumpy Shoes",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/3/3/w/-original-imaggcb3yyfn2hpz.jpeg?q=70",
+      "quantity": 1,
+      "productId": 3,
+      "userId": 3,
+      "id": 3
+    }
+  ],
+  "products": [
+    {
+      "name": "Iphone 14",
+      "price": "89999",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "One of the best phone of this year",
+      "image": "https://www.aptronixindia.com/media/catalog/product/i/p/iphone_14_pro_max_deep_purple_pdp_image_position-1a_avail__en-in.jpg",
+      "id": 1
+    },
+    {
+      "name": "Samsung S22",
+      "price": "79999",
+      "color": "White",
+      "category": "Mobile",
+      "description": "Samsung Best Phone",
+      "image": "https://m.media-amazon.com/images/I/71HUnJvHsbL._SL1500_.jpg",
+      "id": 2
+    },
+    {
+      "name": "Nike Shoes",
+      "price": "5000",
+      "color": "Black",
+      "category": "Shoes",
+      "description": "Comfy & Jumpy Shoes",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/3/3/w/-original-imaggcb3yyfn2hpz.jpeg?q=70",
+      "id": 3
+    },
+    {
+      "name": "Asiccs Shoes",
+      "price": "4500",
+      "color": "Black",
+      "category": "Shoes",
+      "description": "Stylish & Comfort",
+      "image": "https://rukminim1.flixcart.com/image/612/612/xif0q/shoe/y/y/a/-original-imagg6rfhxwx2te4.jpeg?q=70",
+      "id": 4
+    },
+    {
+      "name": "Laptop Bag",
+      "price": "2500",
+      "color": "Black",
+      "category": "Bags",
+      "description": "Stylish Bags",
+      "image": "https://m.media-amazon.com/images/I/41EwHpb2qyS._UX569_.jpg",
+      "id": 5
+    },
+    {
+      "name": "Laptop Bags",
+      "price": "2200",
+      "color": "Grey",
+      "category": "Bags",
+      "description": "Handbags for laptop",
+      "image": "https://m.media-amazon.com/images/I/71uHhX8iPaL._UL1500_.jpg",
+      "id": 6
+    },
+    {
+      "name": "HP Laptop",
+      "price": "78000",
+      "color": "Silver",
+      "category": "Laptops",
+      "description": "Core i5 touchscreen",
+      "image": "https://www.reliancedigital.in/medias/JioBook-NB2112QB-Laptop-492337972-i-2-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w5Mjg5OHxpbWFnZS9qcGVnfGltYWdlcy9oMDQvaDJiLzk5MTA3Mjg1ODkzNDIuanBnfGQ0Yzc4NWUzY2I4MzVhZjQ0ZmUyNjE2M2ZkNjdiMjEwY2VmY2ZkYTFhNmQ4MjcxMDUzNGI2ZTBhYWNhYTc5ZmU",
+      "id": 7
+    },
+    {
+      "name": "Microsoft Laptop",
+      "price": "100000",
+      "color": "Grey",
+      "category": "Laptops",
+      "description": "14.4 inches laptops",
+      "image": "https://m.media-amazon.com/images/I/81KoSSAwH2L._SL1500_.jpg",
+      "id": 8
+    },
+    {
+      "name": "Levis Jeans",
+      "price": "3500",
+      "color": "Skyblue",
+      "category": "Clothing",
+      "description": "On demand jeans, Hurry up",
+      "image": "https://stylemann.com/wp-content/uploads/2017/01/Levi%E2%80%99s-Jeans-7-765x955.jpg",
+      "id": 9
+    },
+    {
+      "name": "Smart Watch",
+      "price": "7000",
+      "color": "Black",
+      "category": "Watch",
+      "description": "Smart watch, counts your every day ",
+      "image": "https://assets.myntassets.com/dpr_1.5,q_60,w_400,c_limit,fl_progressive/assets/images/18855428/2022/11/29/0f9630b6-db89-4abd-93e5-baf7dbd70c331669726242114Fire-BolttTalkProSmartWatch-Black38BSWAAY-11.jpg",
+      "id": 11
+    },
+    {
+      "name": "Toy Truck",
+      "price": "1500",
+      "color": "Yellow",
+      "category": "Toys",
+      "description": "Heavy Truck",
+      "image": "https://images-cdn.ubuy.co.in/633af821fc38ca434d5871a0-big-tow-trcuks-toy-trucks-with-hook-and.jpg",
+      "id": 12
+    },
+    {
+      "name": "Skullcandy Headphones",
+      "price": "12499",
+      "color": "Black",
+      "category": "Headphones",
+      "description": "Crusher® Evo Sensory Bass Headphones with Personal Sound",
+      "image": "https://www.skullcandy.in/wp-content/uploads/2021/07/crusher-evo-wireless-headphones.webp",
+      "id": 14
+    },
+    {
+      "name": "AIRPODS PRO",
+      "price": "17000",
+      "color": "White",
+      "category": "Earphones",
+      "description": "AirPods Pro with Wireless MagSafe Charging Case.",
+      "image": "https://i.gadgets360cdn.com/products/headphones-and-headsets/large/apple-airpods-pro-ture-wireless-earphones-832X558-1598517589.jpg?downsize=*:360",
+      "id": 15
+    },
+    {
+      "name": "Sports Shoes",
+      "price": "11000",
+      "color": "Grey",
+      "category": "Shoes",
+      "description": "Nike AIR MAX 2017 Mens Black/GreyRunning Sports Shoes",
+      "image": "https://m.media-amazon.com/images/I/61puk6pJ4EL._UL1000_.jpg",
+      "id": 16
+    },
+    {
+      "name": "Sports Shoes",
+      "price": "19000",
+      "color": "Red",
+      "category": "Shoes",
+      "description": "Nike Women's W AIR MAX 720 Mesh Sports Shoes\n",
+      "image": "https://m.media-amazon.com/images/I/41YwX9XuqAL.jpg",
+      "id": 17
+    },
+    {
+      "name": "Men's Jackets",
+      "price": "7999",
+      "color": "Brown",
+      "category": "Jackets",
+      "description": "Iftekhar Hood's Men Leather Jacket Vintage Bomber Casual Removal Hood Brown Distressed",
+      "image": "https://m.media-amazon.com/images/I/71YfGoye8eL._UX569_.jpg",
+      "id": 18
+    },
+    {
+      "name": "Gangsta Jacket",
+      "price": "2599",
+      "color": "Black",
+      "category": "Jackets",
+      "description": "100% Polyester, Machine Wash, Gangsta Puffer Jackets Online",
+      "image": "https://prod-img.thesouledstore.com/public/theSoul/uploads/catalog/product/1666961613_1493333.jpg?w=376&dpr=1.0",
+      "id": 20
+    },
+    {
+      "name": "JBL Bluetooth Speaker",
+      "price": "6700",
+      "color": "Black",
+      "category": "Speakers",
+      "description": "Best Bluetooth Speakers for Indoor and Outdoor Entertaining,\nIP Rating: IP67 (dustproof and waterproof)\nBattery Life: 12 hours\nWeight: 1.2 pounds",
+      "image": "https://www.realsimple.com/thmb/DNtKv8dyFUvUqwPKruxAXVQO4Yo=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/jbl-flip-6-portable-waterproof-speaker-e1a24df1c00f4212b35f5894c42b9c7f.jpg",
+      "id": 21
+    },
+    {
+      "name": "Realme Phone",
+      "price": "25000",
+      "color": "Black",
+      "category": "Mobile",
+      "description": "This is really nyc phone",
+      "image": "https://www.reliancedigital.in/medias/Realme-RMX3511-Mobile-Phone-492849558-i-1-1200Wx1200H?context=bWFzdGVyfGltYWdlc3w4MDk2OHxpbWFnZS9qcGVnfGltYWdlcy9oOWEvaDFjLzk4MTY3OTY0MzAzNjYuanBnfDVjZDRiNGMxZDQ2MTMwMjE2YzMzN2RlNWJiNmE2MjNhMjU4MjA2YTIyYzVkYjc4MDRlOThkZDI5NjQ4NDBiODM",
+      "id": 22
+    }
+  ],
+  "orders": [
+    {
+      "name": "Manish Choudhary",
+      "email": "manishchoudhary208@gmail.com",
+      "phone": "09873844627",
+      "adress": "137/7, I Block, Jaitpur Badarpur",
+      "totalPrice": 32500,
+      "userId": 10,
+      "id": 1
+    },
+    {
+      "name": "Bruce",
+      "email": "bruce@test.com",
+      "phone": "999999999",
+      "adress": "Noida Sec 14",
+      "totalPrice": 32500,
+      "userId": 10,
+      "id": 2
+    },
+    {
+      "name": "Manish Choudhary",
+      "email": "manishchoudhary208@gmail.com",
+      "phone": "09873844627",
+      "adress": "137/7, I Block, Jaitpur Badarpur",
+      "totalPrice": 32500,
+      "userId": 10,
+      "id": 3
+    },
+    {
+      "name": "dad",
+      "email": "dad@test.com",
+      "phone": "8888888888",
+      "adress": "New Delhi",
+      "totalPrice": 7876,
+      "userId": 7,
+      "id": 4
+    },
+    {
+      "name": "Anil",
+      "email": "anil@test.com",
+      "phone": "9876515641",
+      "adress": "Noida",
+      "totalPrice": 2800,
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "name": "Bruce",
+      "email": "bruce@test.com",
+      "phone": "25461654105",
+      "adress": "Africa",
+      "totalPrice": 11980,
+      "userId": 10,
+      "id": 7
+    }
+  ]
+}
